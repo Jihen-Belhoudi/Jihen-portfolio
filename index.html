@@ -1,4 +1,4 @@
-<!-- FORCE DEPLOY v4 -->
+<!-- FORCE DEPLOY v5 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +41,6 @@
       padding-left: 15px;
     }
 
-    /* Skills */
     .skills { display: flex; flex-wrap: wrap; gap: 10px; }
     .skill {
       background: var(--bg);
@@ -52,7 +51,6 @@
       color: var(--muted);
     }
 
-    /* Cards & grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -68,36 +66,6 @@
 
     .muted { color: var(--muted); font-size: 0.95rem; }
 
-    /* Diagram */
-    .diagram-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .box {
-      background: #020617;
-      border: 1px solid var(--border);
-      padding: 14px 22px;
-      border-radius: 10px;
-      min-width: 260px;
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    .box.highlight {
-      border-color: var(--accent);
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .arrow {
-      color: var(--muted);
-      font-size: 1.2rem;
-    }
-
-    /* Timeline */
     .timeline {
       border-left: 3px solid var(--accent);
       padding-left: 30px;
@@ -123,9 +91,9 @@
   <h1>Jihen Belhoudi</h1>
   <h2>AI Engineer — Generative AI & LLM Systems</h2>
   <p>
-    AI Engineer specialized in <strong>Generative AI, Large Language Models, RAG pipelines,
-    and agentic systems</strong>. I design production-oriented AI solutions for document
-    processing, text generation, and intelligent assistants.
+    AI Engineer specialized in <strong>Generative AI and Large Language Models</strong>,
+    with hands-on experience building LLM-driven applications for text generation,
+    document processing, conversational AI, and intelligent assistants.
   </p>
 </header>
 
@@ -134,9 +102,8 @@
   <div class="skills">
     <span class="skill">LLMs</span>
     <span class="skill">RAG</span>
-    <span class="skill">Agentic AI</span>
-    <span class="skill">QLoRA</span>
     <span class="skill">Prompt Engineering</span>
+    <span class="skill">QLoRA</span>
     <span class="skill">Hugging Face</span>
     <span class="skill">GPT / Gemini</span>
     <span class="skill">Python</span>
@@ -149,93 +116,108 @@
 </section>
 
 <section>
-  <h3>Architecture — RAG System</h3>
-  <div class="diagram-grid">
-    <div class="box">User Query</div>
-    <div class="arrow">↓</div>
-    <div class="box">Embedding Model</div>
-    <div class="arrow">↓</div>
-    <div class="box">Vector Database</div>
-    <div class="arrow">↓</div>
-    <div class="box">Relevant Documents</div>
-    <div class="arrow">↓</div>
-    <div class="box highlight">LLM (Grounded Generation)</div>
-    <div class="arrow">↓</div>
-    <div class="box">Final Answer + Sources</div>
-  </div>
-</section>
-
-<section>
-  <h3>Architecture — Agentic AI (SACD 5.0)</h3>
-  <div class="diagram-grid">
-    <div class="box">Document Ingestion</div>
-    <div class="arrow">↓</div>
-    <div class="box">OCR Agent</div>
-    <div class="arrow">↓</div>
-    <div class="box">Semantic Analysis Agent</div>
-    <div class="arrow">↓</div>
-    <div class="box">Metadata Agent</div>
-    <div class="arrow">↓</div>
-    <div class="box">Classification Agent</div>
-    <div class="arrow">↓</div>
-    <div class="box highlight">Structured JSON Output</div>
-  </div>
-</section>
-
-<section>
   <h3>Featured AI Projects</h3>
   <div class="grid">
+
     <div class="card">
       <h4>EduRAG — Enterprise AI Assistant</h4>
-      <p class="muted">Enterprise RAG system for document-aware question answering.</p>
+      <p class="muted">
+        Enterprise-grade Retrieval-Augmented Generation system enabling
+        document-aware and grounded question answering using LLMs.
+      </p>
     </div>
+
+    <div class="card">
+      <h4>RAG System for Operational Documents</h4>
+      <p class="muted">
+        LLM-powered system for extracting insights from structured and
+        unstructured operational documents.
+      </p>
+    </div>
+
     <div class="card">
       <h4>LLM Fine-Tuning with QLoRA</h4>
-      <p class="muted">Memory-efficient fine-tuning of LLMs for domain adaptation.</p>
+      <p class="muted">
+        Parameter-efficient fine-tuning of Large Language Models
+        for domain adaptation with reduced memory footprint.
+      </p>
     </div>
+
     <div class="card">
       <h4>kos-brain</h4>
-      <p class="muted">Experimental AI system exploring modular reasoning and LLM orchestration.</p>
+      <p class="muted">
+        Experimental AI system exploring modular reasoning,
+        LLM orchestration, and intelligent logic components.
+      </p>
     </div>
+
+    <div class="card">
+      <h4>MultiPDF Chat App</h4>
+      <p class="muted">
+        Conversational AI application enabling users to query
+        and interact with multiple PDF documents using LLMs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>ATS Resume Analyzer (Generative AI)</h4>
+      <p class="muted">
+        AI-powered system that analyzes resumes against job descriptions
+        to improve ATS compatibility using LLMs.
+      </p>
+    </div>
+
   </div>
 </section>
 
 <section>
   <h3>Professional Experience</h3>
   <div class="timeline">
+
     <div class="event">
-      <h4>Generative AI & Big Data Instructor — ITEAM & TED University</h4>
+      <h4>Generative AI & AI / Big Data Instructor — ITEAM University & TED University</h4>
       <span>Sep 2025 – Present</span>
-      <p class="muted">Teaching LLMs, Generative AI, Agentic AI, Hadoop & Spark.</p>
+      <p class="muted">
+        Deliver courses on Generative AI, LLMs, Prompt Engineering, and Big Data systems.
+      </p>
     </div>
+
     <div class="event">
       <h4>Freelance AI Engineer / Data Scientist</h4>
       <span>May 2023 – Present</span>
-      <p class="muted">Design and deploy LLM-based AI systems.</p>
+      <p class="muted">
+        Design and implement LLM-based AI applications for real-world use cases.
+      </p>
     </div>
+
     <div class="event">
-      <h4>Technical Lead & AI Instructor — GOMYCODE</h4>
+      <h4>Technical Lead & AI / Data Science Instructor — GOMYCODE</h4>
       <span>Feb 2022 – Apr 2023</span>
-      <p class="muted">Led AI programs across 40+ sites, supervised 200+ instructors.</p>
+      <p class="muted">
+        Led AI and Data Science programs across 40+ international sites and supervised 200+ instructors.
+      </p>
     </div>
+
   </div>
 </section>
 
 <section>
   <h3>Education</h3>
   <div class="card muted">
-    <strong>Master’s Degree in Intelligent Systems (Research)</strong> — ENSI (Top of class)<br/>
-    <strong>Bachelor’s Degree in Computer Science</strong> — ESSTHS
+    <strong>Master’s Degree in Intelligent Systems (Research)</strong> — ENSI, Tunis<br/>
+    Graduated top of the class<br/><br/>
+    <strong>Bachelor’s Degree in Computer Science</strong> — ESSTHS, Sousse
   </div>
 </section>
 
 <section>
   <h3>Certifications</h3>
   <div class="card muted">
-    LLM Engineering & Agentic AI · Coursera<br/>
-    LLMOps · Udacity<br/>
-    Generative AI with AWS · Udacity<br/>
-    GAN Specialization · DeepAI Learning
+    LLM Engineering & Agentic AI — Coursera<br/>
+    LLMOps — Udacity<br/>
+    Generative AI with AWS — Udacity<br/>
+    GAN Specialization — DeepAI Learning<br/>
+    Google Data Analytics — Coursera
   </div>
 </section>
 
