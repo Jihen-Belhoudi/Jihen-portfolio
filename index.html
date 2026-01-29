@@ -1,3 +1,4 @@
+<!-- FORCE DEPLOY v4 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +17,7 @@
       --border: #1e293b;
     }
 
-    * {
-      box-sizing: border-box;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
-    }
+    * { box-sizing: border-box; font-family: Inter, system-ui; }
 
     body {
       margin: 0;
@@ -28,37 +26,14 @@
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 1150px;
-      margin: auto;
-      padding: 70px 20px;
-    }
+    .container { max-width: 1150px; margin: auto; padding: 70px 20px; }
 
-    header {
-      margin-bottom: 90px;
-    }
+    header { margin-bottom: 90px; }
+    header h1 { font-size: 3.2rem; margin-bottom: 10px; }
+    header h2 { color: var(--accent); font-weight: 500; margin-bottom: 20px; }
+    header p { max-width: 800px; color: var(--muted); }
 
-    header h1 {
-      font-size: 3.2rem;
-      margin-bottom: 10px;
-    }
-
-    header h2 {
-      color: var(--accent);
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-
-    header p {
-      max-width: 800px;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    section {
-      margin-bottom: 90px;
-    }
-
+    section { margin-bottom: 90px; }
     section h3 {
       font-size: 1.9rem;
       margin-bottom: 25px;
@@ -66,12 +41,8 @@
       padding-left: 15px;
     }
 
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
     .skill {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -81,6 +52,7 @@
       color: var(--muted);
     }
 
+    /* Cards & grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -94,25 +66,50 @@
       padding: 26px;
     }
 
-    .card h4 {
-      margin-top: 0;
-      margin-bottom: 10px;
+    .muted { color: var(--muted); font-size: 0.95rem; }
+
+    /* Diagram */
+    .diagram-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
 
-    .card p, .card li {
-      color: var(--muted);
+    .box {
+      background: #020617;
+      border: 1px solid var(--border);
+      padding: 14px 22px;
+      border-radius: 10px;
+      min-width: 260px;
+      text-align: center;
       font-size: 0.95rem;
     }
 
-    ul {
-      padding-left: 20px;
-      margin: 0;
+    .box.highlight {
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 500;
     }
+
+    .arrow {
+      color: var(--muted);
+      font-size: 1.2rem;
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid var(--accent);
+      padding-left: 30px;
+    }
+
+    .event { margin-bottom: 30px; }
+    .event h4 { margin: 0; }
+    .event span { color: var(--muted); font-size: 0.85rem; }
 
     footer {
       text-align: center;
       color: var(--muted);
-      font-size: 0.9rem;
       border-top: 1px solid var(--border);
       padding-top: 35px;
     }
@@ -120,141 +117,139 @@
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
 
-    <!-- HERO -->
-    <header>
-      <h1>Jihen Belhoudi</h1>
-      <h2>AI Engineer — Generative AI & LLM Systems</h2>
-      <p>
-        AI Engineer specialized in <strong>Generative AI and Large Language Models</strong>,
-        with hands-on experience building LLM-driven applications for text generation,
-        document processing, conversational AI, and agentic systems.
-      </p>
-    </header>
+<header>
+  <h1>Jihen Belhoudi</h1>
+  <h2>AI Engineer — Generative AI & LLM Systems</h2>
+  <p>
+    AI Engineer specialized in <strong>Generative AI, Large Language Models, RAG pipelines,
+    and agentic systems</strong>. I design production-oriented AI solutions for document
+    processing, text generation, and intelligent assistants.
+  </p>
+</header>
 
-    <!-- SKILLS -->
-    <section>
-      <h3>Core Expertise</h3>
-      <div class="skills">
-        <span class="skill">LLMs</span>
-        <span class="skill">RAG</span>
-        <span class="skill">Prompt Engineering</span>
-        <span class="skill">QLoRA</span>
-        <span class="skill">Hugging Face</span>
-        <span class="skill">GPT / Gemini</span>
-        <span class="skill">Python</span>
-        <span class="skill">PyTorch</span>
-        <span class="skill">TensorFlow</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Streamlit</span>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section>
-      <h3>Featured AI Projects</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>EduRAG — Enterprise AI Assistant</h4>
-          <p>Enterprise-grade RAG system for document-aware, grounded question answering.</p>
-        </div>
-
-        <div class="card">
-          <h4>RAG System for Operational Documents</h4>
-          <p>LLM-powered system for extracting insights from operational documents.</p>
-        </div>
-
-        <div class="card">
-          <h4>LLM Fine-Tuning with QLoRA</h4>
-          <p>Parameter-efficient fine-tuning of LLMs for domain adaptation.</p>
-        </div>
-
-        <div class="card">
-          <h4>kos-brain</h4>
-          <p>Python-based intelligent system exploring modular reasoning and LLM logic.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <h3>Professional Experience</h3>
-
-      <div class="card">
-        <h4>Generative AI & AI / Big Data Instructor — ITEAM University & TED University</h4>
-        <p><em>Sep 2025 – Present</em></p>
-        <ul>
-          <li>Deliver courses on Generative AI, LLMs, and Prompt Engineering</li>
-          <li>Supervise LLM-based and Agentic AI projects (SACD 5.0)</li>
-          <li>Teach Big Data systems (Hadoop, Spark, Hive)</li>
-        </ul>
-      </div>
-
-      <br/>
-
-      <div class="card">
-        <h4>Freelance AI Engineer / Data Scientist</h4>
-        <p><em>May 2023 – Present</em></p>
-        <ul>
-          <li>Design and implement LLM-based applications</li>
-          <li>Apply ML, DL, and NLP techniques to real-world problems</li>
-        </ul>
-      </div>
-
-      <br/>
-
-      <div class="card">
-        <h4>Technical Lead & AI Instructor — GOMYCODE</h4>
-        <p><em>Feb 2022 – Apr 2023</em></p>
-        <ul>
-          <li>Led AI & Data Science programs across 40+ international sites</li>
-          <li>Supervised 200+ instructors</li>
-          <li>Conducted technical interviews and curriculum design</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-      <h3>Education</h3>
-      <div class="card">
-        <p><strong>Master’s Degree in Intelligent Systems (Research)</strong><br/>
-        ENSI, Tunis — 2020–2023<br/>
-        <em>Graduated top of the class</em></p>
-
-        <p><strong>Bachelor’s Degree in Computer Science</strong><br/>
-        ESSTHS, Sousse — 2016–2019</p>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section>
-      <h3>Certifications</h3>
-      <div class="card">
-        <ul>
-          <li>LLM Engineering & Agentic AI — Coursera</li>
-          <li>LLMOps — Udacity</li>
-          <li>Generative AI with AWS — Udacity</li>
-          <li>GAN Specialization — DeepAI Learning</li>
-          <li>Google Data Analytics — Coursera</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- LANGUAGES -->
-    <section>
-      <h3>Languages</h3>
-      <div class="card">
-        <p>English (Advanced) · French (Fluent) · Arabic (Native)</p>
-      </div>
-    </section>
-
-    <footer>
-      © 2026 — Jihen Belhoudi · AI Engineer
-    </footer>
-
+<section>
+  <h3>Core Expertise</h3>
+  <div class="skills">
+    <span class="skill">LLMs</span>
+    <span class="skill">RAG</span>
+    <span class="skill">Agentic AI</span>
+    <span class="skill">QLoRA</span>
+    <span class="skill">Prompt Engineering</span>
+    <span class="skill">Hugging Face</span>
+    <span class="skill">GPT / Gemini</span>
+    <span class="skill">Python</span>
+    <span class="skill">PyTorch</span>
+    <span class="skill">TensorFlow</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Streamlit</span>
+    <span class="skill">Docker</span>
   </div>
+</section>
+
+<section>
+  <h3>Architecture — RAG System</h3>
+  <div class="diagram-grid">
+    <div class="box">User Query</div>
+    <div class="arrow">↓</div>
+    <div class="box">Embedding Model</div>
+    <div class="arrow">↓</div>
+    <div class="box">Vector Database</div>
+    <div class="arrow">↓</div>
+    <div class="box">Relevant Documents</div>
+    <div class="arrow">↓</div>
+    <div class="box highlight">LLM (Grounded Generation)</div>
+    <div class="arrow">↓</div>
+    <div class="box">Final Answer + Sources</div>
+  </div>
+</section>
+
+<section>
+  <h3>Architecture — Agentic AI (SACD 5.0)</h3>
+  <div class="diagram-grid">
+    <div class="box">Document Ingestion</div>
+    <div class="arrow">↓</div>
+    <div class="box">OCR Agent</div>
+    <div class="arrow">↓</div>
+    <div class="box">Semantic Analysis Agent</div>
+    <div class="arrow">↓</div>
+    <div class="box">Metadata Agent</div>
+    <div class="arrow">↓</div>
+    <div class="box">Classification Agent</div>
+    <div class="arrow">↓</div>
+    <div class="box highlight">Structured JSON Output</div>
+  </div>
+</section>
+
+<section>
+  <h3>Featured AI Projects</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>EduRAG — Enterprise AI Assistant</h4>
+      <p class="muted">Enterprise RAG system for document-aware question answering.</p>
+    </div>
+    <div class="card">
+      <h4>LLM Fine-Tuning with QLoRA</h4>
+      <p class="muted">Memory-efficient fine-tuning of LLMs for domain adaptation.</p>
+    </div>
+    <div class="card">
+      <h4>kos-brain</h4>
+      <p class="muted">Experimental AI system exploring modular reasoning and LLM orchestration.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Professional Experience</h3>
+  <div class="timeline">
+    <div class="event">
+      <h4>Generative AI & Big Data Instructor — ITEAM & TED University</h4>
+      <span>Sep 2025 – Present</span>
+      <p class="muted">Teaching LLMs, Generative AI, Agentic AI, Hadoop & Spark.</p>
+    </div>
+    <div class="event">
+      <h4>Freelance AI Engineer / Data Scientist</h4>
+      <span>May 2023 – Present</span>
+      <p class="muted">Design and deploy LLM-based AI systems.</p>
+    </div>
+    <div class="event">
+      <h4>Technical Lead & AI Instructor — GOMYCODE</h4>
+      <span>Feb 2022 – Apr 2023</span>
+      <p class="muted">Led AI programs across 40+ sites, supervised 200+ instructors.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Education</h3>
+  <div class="card muted">
+    <strong>Master’s Degree in Intelligent Systems (Research)</strong> — ENSI (Top of class)<br/>
+    <strong>Bachelor’s Degree in Computer Science</strong> — ESSTHS
+  </div>
+</section>
+
+<section>
+  <h3>Certifications</h3>
+  <div class="card muted">
+    LLM Engineering & Agentic AI · Coursera<br/>
+    LLMOps · Udacity<br/>
+    Generative AI with AWS · Udacity<br/>
+    GAN Specialization · DeepAI Learning
+  </div>
+</section>
+
+<section>
+  <h3>Languages</h3>
+  <div class="card muted">
+    English (Advanced) · French (Fluent) · Arabic (Native)
+  </div>
+</section>
+
+<footer>
+  © 2026 — Jihen Belhoudi · AI Engineer
+</footer>
+
+</div>
 </body>
 </html>
