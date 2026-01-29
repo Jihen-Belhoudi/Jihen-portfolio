@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jihen Belhoudi | AI Engineer</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      margin-bottom: 80px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 700px;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform 0.2s ease, border 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+    }
+
+    .card h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #020617;
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+      padding-top: 30px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <header>
+      <h1>Jihen Belhoudi</h1>
+      <h2>AI Engineer — Generative AI & LLM Systems</h2>
+      <p>
+        I design and build <strong>production-oriented AI systems</strong> with a focus on
+        <strong>LLMs, Retrieval-Augmented Generation (RAG), and fine-tuning</strong>.
+        My work centers on reliable, document-aware, and business-driven AI solutions.
+      </p>
+    </header>
+
+    <!-- SKILLS -->
+    <section>
+      <h3>Core Expertise</h3>
+      <div class="skills">
+        <span class="skill">LLMs</span>
+        <span class="skill">RAG</span>
+        <span class="skill">Prompt Engineering</span>
+        <span class="skill">QLoRA</span>
+        <span class="skill">PyTorch</span>
+        <span class="skill">TensorFlow</span>
+        <span class="skill">Scikit-learn</span>
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Docker</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Git</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h3>Featured Projects</h3>
+      <div class="grid">
+
+        <div class="card">
+          <h4>EduRAG — Enterprise AI Assistant</h4>
+          <p>
+            Enterprise-grade Retrieval-Augmented Generation system enabling
+            grounded, document-aware answers using LLMs.
+          </p>
+          <a href="https://github.com/Jihen-Belhoudi/EduRAG-Enterprise-Assistant" target="_blank">
+            View Repository →
+          </a>
+        </div>
+
+        <div class="card">
+          <h4>RAG System for Operational Documents</h4>
+          <p>
+            LLM-powered system for extracting insights from structured and
+            unstructured operational documents.
+          </p>
+          <a href="https://github.com/Jihen-Belhoudi/RAG-System-for-Operational-Documents" target="_blank">
+            View Repository →
+          </a>
+        </div>
+
+        <div class="card">
+          <h4>LLM Fine-Tuning with QLoRA</h4>
+          <p>
+            Parameter-efficient fine-tuning of large language models for
+            domain adaptation with reduced memory footprint.
+          </p>
+          <a href="https://github.com/Jihen-Belhoudi/llm-fine-tuning-qlora" target="_blank">
+            View Repository →
+          </a>
+        </div>
+
+        <div class="card">
+          <h4>MediTalk — Medical Chatbot (LLaMA 2)</h4>
+          <p>
+            Healthcare-oriented conversational AI system demonstrating
+            applied LLM usage in medical contexts.
+          </p>
+          <a href="https://github.com/Jihen-Belhoudi/MediTalk-Medical-chatboot-using-Llama2" target="_blank">
+            View Repository →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h3>Contact</h3>
+      <p>Email: <strong>jihen.belhoudi@ensi-uma.tn</strong></p>
+      <p>
+        GitHub:
+        <a href="https://github.com/Jihen-Belhoudi" target="_blank">
+          github.com/Jihen-Belhoudi
+        </a>
+      </p>
+      <p>
+        Kaggle:
+        <a href="https://www.kaggle.com/jihenbelhoudi" target="_blank">
+          kaggle.com/jihenbelhoudi
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      © 2026 — Built by Jihen Belhoudi · AI Engineer
+    </footer>
+
+  </div>
+</body>
+</html>
 
