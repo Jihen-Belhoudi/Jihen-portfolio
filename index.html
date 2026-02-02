@@ -1,4 +1,4 @@
-<!-- FORCE DEPLOY v6 -->
+<!-- FORCE DEPLOY v7 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,13 +82,22 @@
       padding-top: 35px;
     }
 
-    a {
+    /* ✅ Project Button */
+    .project-link {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--accent);
       color: var(--accent);
+      font-size: 0.9rem;
+      transition: 0.2s ease;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .project-link:hover {
+      background: var(--accent);
+      color: #020617;
     }
   </style>
 </head>
@@ -101,8 +110,8 @@
   <h2>AI Engineer — Generative AI & LLM Systems</h2>
   <p>
     AI Engineer specialized in <strong>Generative AI and Large Language Models</strong>,
-    with hands-on experience building LLM-driven applications for text generation,
-    document processing, conversational AI, and intelligent assistants.
+    with hands-on experience building LLM-driven applications for intelligent assistants,
+    Retrieval-Augmented Generation (RAG), agentic workflows, and secure AI tool orchestration.
   </p>
 </header>
 
@@ -111,18 +120,16 @@
   <div class="skills">
     <span class="skill">LLMs</span>
     <span class="skill">RAG</span>
+    <span class="skill">Agentic AI</span>
+    <span class="skill">MCP Protocol</span>
     <span class="skill">Prompt Engineering</span>
     <span class="skill">QLoRA</span>
     <span class="skill">Hugging Face</span>
-    <span class="skill">GPT / Gemini</span>
     <span class="skill">Python</span>
     <span class="skill">PyTorch</span>
-    <span class="skill">TensorFlow</span>
+    <span class="skill">FastAPI</span>
     <span class="skill">SQL</span>
-    <span class="skill">Streamlit</span>
     <span class="skill">Docker</span>
-    <span class="skill">Agentic AI</span>
-    <span class="skill">MCP Protocol</span>
     <span class="skill">Security AI</span>
   </div>
 </section>
@@ -131,69 +138,95 @@
   <h3>Featured AI Projects</h3>
   <div class="grid">
 
-    <!-- ✅ NEW PROJECT -->
     <div class="card">
       <h4>SOC Copilot Agent — MCP-Native Security Assistant</h4>
       <p class="muted">
-        AI-powered Security Operations Copilot built with
-        <strong>Agentic LLM orchestration</strong>,
-        <strong>Model Context Protocol (MCP)</strong> tools, and
-        <strong>RBAC security controls</strong>.
-        Supports alert triage, authentication log analysis, and incident case creation
-        using local LLMs (Ollama).
-        <br/><br/>
-        🔗 <a href="https://github.com/yourusername/soc-copilot-agent">
-          View Project on GitHub →
-        </a>
+        MCP-native SOC Copilot Agent using FastAPI + Ollama + secure tool orchestration
+        (alerts, logs, cases). Demonstrates RBAC, audit logging, and evidence-grounded triage.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/soc-copilot-agent"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
     <div class="card">
       <h4>EduRAG — Enterprise AI Assistant</h4>
       <p class="muted">
-        Enterprise-grade Retrieval-Augmented Generation system enabling
-        document-aware and grounded question answering using LLMs.
+        Enterprise-grade Retrieval-Augmented Generation assistant enabling grounded,
+        document-aware question answering with LLMs.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/EduRAG-Enterprise-Assistant"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
     <div class="card">
       <h4>RAG System for Operational Documents</h4>
       <p class="muted">
-        LLM-powered system for extracting insights from structured and
-        unstructured operational documents.
+        LLM-powered system for extracting insights from structured and unstructured
+        operational documents using retrieval pipelines.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/RAG-System-for-Operational-Documents-"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
     <div class="card">
       <h4>LLM Fine-Tuning with QLoRA</h4>
       <p class="muted">
-        Parameter-efficient fine-tuning of Large Language Models
-        for domain adaptation with reduced memory footprint.
+        Parameter-efficient fine-tuning of Large Language Models using QLoRA for
+        domain adaptation with reduced compute footprint.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/llm-fine-tuning-qlora"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
     <div class="card">
       <h4>kos-brain</h4>
       <p class="muted">
-        Experimental AI system exploring modular reasoning,
-        LLM orchestration, and intelligent logic components.
+        Experimental modular AI system exploring reasoning components,
+        orchestration strategies, and intelligent LLM pipelines.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/kos-brain"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
     <div class="card">
-      <h4>MultiPDF Chat App</h4>
+      <h4>Visionary Invoice Insights (Gemini AI)</h4>
       <p class="muted">
-        Conversational AI application enabling users to query
-        and interact with multiple PDF documents using LLMs.
+        AI-powered invoice understanding system leveraging Gemini models for
+        document extraction, reasoning, and automation insights.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/Visionary-Invoice-Insights-Unveiling-the-Power-of-Gemini-AI"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
     <div class="card">
-      <h4>ATS Resume Analyzer (Generative AI)</h4>
+      <h4>Text Generation using GPT-Neo</h4>
       <p class="muted">
-        AI-powered system that analyzes resumes against job descriptions
-        to improve ATS compatibility using LLMs.
+        Hands-on NLP project exploring text generation workflows with GPT-Neo,
+        transformers, and decoding strategies.
       </p>
+      <a class="project-link"
+         href="https://github.com/Jihen-Belhoudi/Text_Generation_using_GPT_Neo"
+         target="_blank">
+        View Project →
+      </a>
     </div>
 
   </div>
